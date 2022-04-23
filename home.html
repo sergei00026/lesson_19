@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>ДЗ №19 Верстка сайта с помощью GULP - Выполнил Serjio (Сергей)#3941ДЗ №19</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220423150747">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__body">
+						<div data-spollers data-spollers-speed="300" class="spollers top-header__spollers spollers-top-header">
+							<div class="spollers__item spollers-top-header__item">
+								<button type="button" data-spoller data-spoller-close class="spollers__title spollers-top-header__title"><span>Mon-Thu:</span>&nbsp; 9:00 AM - 5:30 PM
+								</button>
+								<div class="spollers__body spollers-top-header__body">
+									<div class="spollers-top-header__element">
+										<div class="spollers-top-header__left">
+											<div class="spollers-top-header__img-clock -ibg">
+												<img src="img/header/clock.svg" alt="clock">
+											</div>
+										</div>
+										<div class="spollers-top-header__right">
+											<div class="spollers-top-header__heading">We are open:</div>
+											<div class="spollers-top-header__mon-thu"><span>Mon-Thu:&nbsp;</span> 9:00 AM - 5:30 PM</div>
+											<div class="spollers-top-header__fr"><span>Fr:&nbsp;</span> 9:00 AM - 6:00 PM</div>
+											<div class="spollers-top-header__sat"><span>Sat:&nbsp;</span> 11:00 AM - 5:00 PM</div>
+										</div>
+									</div>
+									<div class="spollers-top-header__element">
+										<div class="spollers-top-header__left">
+											<div class="spollers-top-header__img-location -ibg">
+												<img src="img/header/location.svg" alt="location">
+											</div>
+										</div>
+										<div class="spollers-top-header__right">
+											<div class="spollers-top-header__heading">Address: 1234 Street Adress, City Address, 1234</div>
+										</div>
+									</div>
+									<div class="spollers-top-header__element">
+										<div class="spollers-top-header__content">
+											<div class="spollers-top-header__phone">Phones: <a href="tel:0012345678">(00) 1234 5678</a></div>
+											<div class="spollers-top-header__email">E-mail: <a href="mailto:shop@email.com">shop@email.com</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top-header__contacts">
+							<span>Visit our showroom in 1234 Street Adress City Address, 1234</span> <a href="">Contact Us</a>
+						</div>
+						<div class="top-header__connect connect-top-header">
+							<div class="connect-top-header__tel">Call Us: <a href="tel:0012345678">(00) 1234 5678</a></div>
+							<a href="facebook.com" target="_blank" class="connect-top-header__facebook"><img src="img/header/facebook.svg" alt="facebook"></a>
+							<a href="instagram.com" target="_blank" class="connect-top-header__insta"><img src="img/header/insta.svg" alt="insta"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__main main-header">
+				<div class="main-header__container">
+					<div class="main-header__body">
+						<div class="main-header__logo -ibg"><img src="img/header/logo.svg" alt="logo"></div>
+						<div class="main-header__menu menu">
+							<!-- Иконка бургера -->
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<!-- Общая оболочка меню -->
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="" class="menu__link">Laptops</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Desktop PCs</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Networking Devices</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Printers & Scanners</a></li>
+									<li class="menu__item"><a href="" class="menu__link">PC Parts
+										</a></li>
+									<li class="menu__item"><a href="" class="menu__link">All Other Products</a></li>
+									<li class="menu__item"><a href="" class="menu__link">Repairs</a></li>
+									<li class="menu__item menu__item_btn"><a href="" class="menu__link">Our Deals</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="main-header__active">
+							<a href="" class="main-header__search -ibg"><img src="img/header/search.svg" alt="search"></a>
+							<a href="" class="main-header__cart -ibg"><img src="img/header/cart.svg" alt="cart"><span>1</span></a>
+							<a href="" class="main-header__login -ibg"><picture><source srcset="img/header/avatar.webp" type="image/webp"><img src="img/header/avatar.jpg" alt="avatar"></picture></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+
+		<main class="page">
+			<section class="page__address address-page">
+				<div class="address-page__container">
+					<div class="address-page__address">Home <span>›</span> About Us</div>
+					<h2 class="address-page__title">About Us</h2>
+				</div>
+			</section>
+			<section class="page__block-one block-one-page">
+				<div class="block-one-page__container">
+					<div class="block-one-page__body">
+						<div class="block-one-page__content">
+							<h3 class="block-one-page__heading">A Family That Keeps On Growing</h3>
+							<div class="block-one-page__text">
+								<p>We always aim to please the home market, supplying great computers and hardware at great prices to non-corporate customers, through our large Melbourne CBD showroom and our online store.</p>
+								<p>Shop management approach fosters a strong customer service focus in our staff. We prefer to cultivate long-term client relationships rather than achieve quick sales, demonstrated in the measure of our long-term success.</p>
+							</div>
+						</div>
+						<div class="block-one-page__img -ibg">
+							<picture><source srcset="img/one-block/vitrina.webp" type="image/webp"><img src="img/one-block/vitrina.jpg" alt="img"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__block-two block-two-page">
+				<div class="block-two-page__container">
+					<div class="block-two-page__body">
+						<div class="block-two-page__img -ibg">
+							<picture><source srcset="img/two-block/klava.webp" type="image/webp"><img src="img/two-block/klava.jpg" alt="img"></picture>
+						</div>
+						<div class="block-two-page__content">
+							<img src="img/two-block/Logo.svg" alt="logo" class="block-two-page__logo">
+							<h3 class="block-two-page__heading">shop.com</h3>
+							<div class="block-two-page__text">
+								<p>Shop is a proudly Australian owned, Melbourne based supplier of I.T. goods and services, operating since 1991. Our client base encompasses individuals, small business, corporate and government organisations. We provide complete business IT solutions, centred on high quality hardware and exceptional customer service.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__block-one block-one-page">
+				<div class="block-one-page__container">
+					<div class="block-one-page__body">
+						<div class="block-one-page__content">
+							<img src="img/one-block/Logo-heart.svg" alt="" class="block-two-page__logo">
+							<h3 class="block-one-page__heading">You're In Safe Hands</h3>
+							<div class="block-one-page__text">
+								<p>Experience a 40% boost in computing from last generation. MSI Desktop equips the 10th Gen. Intel® Core™ i7 processor with the upmost computing power to bring you an unparalleled gaming experience.
+								</p>
+								<p>*Performance compared to i7-9700. Specs varies by model.</p>
+							</div>
+						</div>
+						<div class="block-one-page__img block-one-page__img_komp -ibg">
+							<picture><source srcset="img/one-block/komp.webp" type="image/webp"><img src="img/one-block/komp.png" alt="img"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__block-two block-two-page">
+				<div class="block-two-page__container">
+					<div class="block-two-page__body">
+						<div class="block-two-page__img -ibg">
+							<picture><source srcset="img/two-block/komp.webp" type="image/webp"><img src="img/two-block/komp.jpg" alt="img"></picture>
+						</div>
+						<div class="block-two-page__content">
+							<img src="img/two-block/Logo-stars.svg" alt="logo" class="block-two-page__logo">
+							<h3 class="block-two-page__heading">The Highest Quality of Products</h3>
+							<div class="block-two-page__text">
+								<p>Shop is a proudly Australian owned, Melbourne based supplier of I.T. goods and services, operating since 1991. Our client base encompasses individuals, small business, corporate and government organisations. We provide complete business IT solutions, centred on high quality hardware and exceptional customer service.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__block-one block-one-page">
+				<div class="block-one-page__container">
+					<div class="block-one-page__body">
+						<div class="block-one-page__content">
+							<img src="img/one-block/Logo-auto.svg" alt="auto" class="block-two-page__logo">
+							<h3 class="block-one-page__heading">You're In Safe Hands</h3>
+							<div class="block-one-page__text">
+								<p>Experience a 40% boost in computing from last generation. MSI Desktop equips the 10th Gen. Intel® Core™ i7 processor with the upmost computing power to bring you an unparalleled gaming experience.
+								</p>
+								<p>*Performance compared to i7-9700. Specs varies by model.</p>
+
+							</div>
+						</div>
+						<div class="block-one-page__img block-one-page__img_komp2 -ibg">
+							<picture><source srcset="img/one-block/komp-2.webp" type="image/webp"><img src="img/one-block/komp-2.png" alt="img"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__quotes quotes-page">
+				<div class="quotes-page__container">
+					<div class="swiper quotes-page__swipper">
+						<!-- Additional required wrapper -->
+						<div class="quotes-page__wiper-wrapper swiper-wrapper">
+							<!-- Slides -->
+							<div class="quotes-page__swiper-slide swiper-slide">
+								<div class="quotes-page__body">
+									<div class="quotes-page__kav">‘’</div>
+									<div class="quotes-page__text">My first order arrived today in perfect condition. From the time I sent a question about the item to making the purchase, to the shipping and now the delivery, your company, Tecs, has stayed in touch. Such great service. I look forward to shopping on your site in the future and would highly recommend it.</div>
+								</div>
+								<div class="quotes-page__autor">- Tama Brown</div>
+							</div>
+							<div class="quotes-page__swiper-slide swiper-slide">
+								<div class="quotes-page__body">
+									<div class="quotes-page__kav">‘’</div>
+									<div class="quotes-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores quos cum libero, alias esse eaque id doloribus possimus minus repellat dolore recusandae, officiis consequuntur inventore veniam nam maxime magni eveniet voluptatem mollitia accusamus sed quidem. Quibusdam fugiat quo aspernatur nesciunt quisquam possimus sint mollitia odit eius magnam rerum saepe labore veniam ad nam pariatur in, tempore sed dolorum, perferendis tenetur dolor! Distinctio ullam deleniti officiis dolorum, blanditiis, nam similique sunt voluptatum modi at, perferendis perspiciatis quisquam rem labore. Totam ipsum ab deleniti saepe perspiciatis earum odio reiciendis. Eligendi quod sit dolorem ex vero numquam repellat quas doloribus sint at!</div>
+								</div>
+								<div class="quotes-page__autor">- Tama Brown</div>
+							</div>
+							<div class="quotes-page__swiper-slide swiper-slide">
+								<div class="quotes-page__body">
+									<div class="quotes-page__kav">‘’</div>
+									<div class="quotes-page__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facere corporis voluptates aut ipsum temporibus enim unde odit voluptate sequi officiis sit autem itaque, veritatis in veniam quisquam cupiditate harum dolore expedita. Saepe incidunt neque nesciunt delectus explicabo hic placeat molestias laborum expedita rerum possimus odit consequuntur magni sed, eligendi maiores molestiae, sapiente fuga fugiat corporis. Molestiae enim dolores ut.</div>
+								</div>
+								<div class="quotes-page__autor">- Tama Brown</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__advantages advantages-page">
+				<div class="advantages-page__container">
+					<div class="advantages-page__body">
+						<div class="advantages-page__item">
+							<img src="img/advantages/Saving.svg" alt="saving" class="advantages-page__img">
+							<div class="advantages-page__heading">Product Support</div>
+							<div class="advantages-page__text">Up to 3 years on-site warranty available for your peace of mind.</div>
+						</div>
+						<div class="advantages-page__item">
+							<img src="img/advantages/Support.svg" alt="saving" class="advantages-page__img">
+							<div class="advantages-page__heading">Personal Account</div>
+							<div class="advantages-page__text">With big discounts, free delivery and a dedicated support specialist.</div>
+						</div>
+						<div class="advantages-page__item">
+							<img src="img/advantages/Account.svg" alt="saving" class="advantages-page__img">
+							<div class="advantages-page__heading">Amazing Savings</div>
+							<div class="advantages-page__text">Up to 70% off new Products, you can be sure of the best price.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__left">
+						<h2 class="top-footer__title">Sign Up To Our Newsletter.</h2>
+						<div class="top-footer__subtitle">Be the first to hear about the latest offers.</div>
+					</div>
+					<div class="top-footer__right">
+						<form action="" method="get">
+							<input type="email" name="email" id="email" placeholder="Your Email" required>
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__main main-footer">
+					<div data-spollers="768,max" class="main-footer__spollers spollers">
+						<div class="main-footer__spollers-item spollers__item">
+							<button type="button" data-spoller class="main-footer__title spollers__title">Information
+							</button>
+							<div class="spollers__body main-footer__body">
+								<a href="" class="main-footer__item">About Us</a>
+								<a href="" class="main-footer__item">About Zip</a>
+								<a href="" class="main-footer__item">Privacy Policy</a>
+								<a href="" class="main-footer__item">Search</a>
+								<a href="" class="main-footer__item">Orders and Returns</a>
+								<a href="" class="main-footer__item">Contact Us</a>
+								<a href="" class="main-footer__item">Advanced Search</a>
+								<a href="" class="main-footer__item">Newsletter Subscription</a>
+							</div>
+						</div>
+						<div class="main-footer__spollers-item spollers__item">
+							<button type="button" data-spoller class="main-footer__title spollers__title">Information
+							</button>
+							<div class="spollers__body main-footer__body">
+								<a href="" class="main-footer__item">About Us</a>
+								<a href="" class="main-footer__item">About Zip</a>
+								<a href="" class="main-footer__item">Privacy Policy</a>
+								<a href="" class="main-footer__item">Search</a>
+								<a href="" class="main-footer__item">Orders and Returns</a>
+								<a href="" class="main-footer__item">Contact Us</a>
+								<a href="" class="main-footer__item">Advanced Search</a>
+								<a href="" class="main-footer__item">Newsletter Subscription</a>
+							</div>
+						</div>
+						<div class="main-footer__spollers-item spollers__item">
+							<button type="button" data-spoller class="main-footer__title spollers__title">Information
+							</button>
+							<div class="spollers__body main-footer__body">
+								<a href="" class="main-footer__item">About Us</a>
+								<a href="" class="main-footer__item">About Zip</a>
+								<a href="" class="main-footer__item">Privacy Policy</a>
+								<a href="" class="main-footer__item">Search</a>
+								<a href="" class="main-footer__item">Orders and Returns</a>
+								<a href="" class="main-footer__item">Contact Us</a>
+								<a href="" class="main-footer__item">Advanced Search</a>
+								<a href="" class="main-footer__item">Newsletter Subscription</a>
+							</div>
+						</div>
+						<div class="main-footer__spollers-item spollers__item">
+							<button type="button" data-spoller class="main-footer__title spollers__title">Information
+							</button>
+							<div class="spollers__body main-footer__body">
+								<a href="" class="main-footer__item">About Us</a>
+								<a href="" class="main-footer__item">About Zip</a>
+								<a href="" class="main-footer__item">Privacy Policy</a>
+								<a href="" class="main-footer__item">Search</a>
+								<a href="" class="main-footer__item">Orders and Returns</a>
+								<a href="" class="main-footer__item">Contact Us</a>
+								<a href="" class="main-footer__item">Advanced Search</a>
+								<a href="" class="main-footer__item">Newsletter Subscription</a>
+							</div>
+						</div>
+						<div class="main-footer__spollers-item spollers__item">
+							<button type="button" data-spoller class="main-footer__title spollers__title">Information
+							</button>
+							<div class="spollers__body main-footer__body">
+								<a href="" class="main-footer__item">About Us</a>
+								<a href="" class="main-footer__item">About Zip</a>
+								<a href="" class="main-footer__item">Privacy Policy</a>
+								<a href="" class="main-footer__item">Search</a>
+								<a href="" class="main-footer__item">Orders and Returns</a>
+								<a href="" class="main-footer__item">Contact Us</a>
+								<a href="" class="main-footer__item">Advanced Search</a>
+								<a href="" class="main-footer__item">Newsletter Subscription</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__down"></div>
+			</div>
+		</footer>
+
+		<!-- <div data-spollers class="spollers">
+	<div class="spollers__item">
+		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
+		<div class="spollers__body">Контент спойлера</div>
+	</div>
+</div> -->
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220423150747"></script>
+</body>
+
+</html>
